@@ -1,0 +1,82 @@
+{
+    "kind": "collectionType",
+    "collectionName": "projects",
+    "info": {
+      "singularName": "project",
+      "pluralName": "projects",
+      "displayName": "Project"
+    },
+    "options": {
+      "draftAndPublish": true
+    },
+    "attributes": {
+      "name": {
+        "type": "string"
+      },
+      "description": {
+        "type": "richtext"
+      },
+      "location": {
+        "type": "string"
+      },
+      "category": {
+        "type": "enumeration",
+        "enum": [
+          "Biotech",
+          "Climatetech"
+        ]
+      },
+      "image": {
+        "type": "media",
+        "multiple": false,
+        "required": false,
+        "allowedTypes": [
+          "images"
+        ]
+      },
+      "fundingGoal": {
+        "type": "decimal"
+      },
+      "currentFunding": {
+        "type": "decimal"
+      },
+      "participantsCount": {
+        "type": "integer"
+      },
+      "daysLeft": {
+        "type": "integer"
+      },
+      "tokenSymbol": {
+        "type": "string"
+      },
+      "tokenOfferingAmount": {
+        "type": "decimal"
+      },
+      "pricePerToken": {
+        "type": "decimal"
+      },
+      "minimumInvestment": {
+        "type": "decimal"
+      },
+      "maximumInvestment": {
+        "type": "decimal"
+      },
+      "investmentDuration": {
+        "type": "integer"
+      },
+      "roiPerYear": {
+        "type": "decimal"
+      },
+      "paymentFrequency": {
+        "type": "enumeration",
+        "enum": [
+          "Monthly",
+          "Quarterly",
+          "Annually"
+        ]
+      },
+      "revenueSharePerOrder": {
+        "type": "decimal"
+      }
+    }
+  }
